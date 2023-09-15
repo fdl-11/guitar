@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ProductsController extends Controller
+class ProductController extends Controller
 {
     // Display guitar page
     public function guitars()
@@ -14,7 +14,7 @@ class ProductsController extends Controller
         ]);
     }
 
-    // Display guitar sccessories page
+    // Display guitar accessories page
     public function accessories()
     {
         return view('accessories', [

@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,5 +21,5 @@ Route::get('/', function () {
 });
 
 // Products Route
-Route::get('/products/guitars', [ProductsController::class, 'guitars']);
-Route::get('/products/accessories', [ProductsController::class, 'accessories']);
+Route::get('/products/guitars', [ProductController::class, 'guitars']);
+Route::get('/products/accessories', [ProductController::class, 'accessories']);
