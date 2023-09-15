@@ -9,8 +9,8 @@ class ProductsController extends Controller
     // Display guitar page
     public function guitars()
     {
-        return view('guitar', [
-            
+        return view('guitars', [
+            "active" => "guitars"
         ]);
     }
 
@@ -18,7 +18,7 @@ class ProductsController extends Controller
     public function accessories()
     {
         return view('accessories', [
-
+            "active" => "accessories"
         ]);
     }
 }

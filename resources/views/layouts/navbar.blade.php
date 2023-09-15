@@ -7,13 +7,13 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link {{ ($active === "home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products/guitars">Gitar</a>
+                    <a class="nav-link {{ ($active === "guitars") ? 'active' : '' }}" href="/products/guitars">Gitar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/products/accessories">Aksesoris</a>
+                    <a class="nav-link {{ ($active === "accessories") ? 'active' : '' }}" href="/products/accessories">Aksesoris</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto px-3">
