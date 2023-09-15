@@ -1,12 +1,33 @@
-<div class="container position-fixed bottom-0 start-50 translate-middle-x"></div>
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-    </ul>
-    <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
-  </footer>
-</div>
+<footer class="bg-dark text-center text-white fixed-bottom">
+  	<!-- Grid container -->
+    <div class="container p-4 pb-0">
+      	<!-- Section: Social media -->
+      	<section class="mb-4">
+        	<!-- Whatsapp -->
+        	<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<i class="bi bi-whatsapp"></i>
+			</a>
+        	<!-- Instagram -->
+        	<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<i class="bi bi-instagram"></i>
+			</a>
+        	<!-- Facebook -->
+        	<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<i class="bi bi-facebook"></i>
+			</a>
+        	<!-- Twitter -->
+        	<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+				<i class="bi bi-twitter"></i>
+			</a>
+	    </section>
+      	<!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      	© 2020 Copyright:
+      	<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>

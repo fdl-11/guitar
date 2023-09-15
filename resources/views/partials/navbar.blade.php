@@ -10,10 +10,10 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Gitar</a>
+                    <a class="nav-link" href="/products/guitars">Gitar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Aksesoris</a>
+                    <a class="nav-link" href="/products/accessories">Aksesoris</a>
                 </li>
             </ul>
             <ul class="navbar-nav ms-auto px-3">

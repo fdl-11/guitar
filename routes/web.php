@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+// Products Route
+Route::get('/products/guitars', [ProductsController::class, 'guitars']);
+Route::get('/products/accessories', [ProductsController::class, 'accessories']);
