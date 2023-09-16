@@ -21,5 +21,6 @@ Route::get('/', function () {
 });
 
 // Products Route
-Route::get('/products/guitars', [ProductController::class, 'guitars']);
-Route::get('/products/accessories', [ProductController::class, 'accessories']);
+Route::get('/products', [ProductController::class, 'show']);
+Route::get('/products/guitars', [ProductController::class, 'guitars']);     // gak dipake
+Route::get('/products/accessories', [ProductController::class, 'accessories']);     // gak dipake
