@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -10,7 +11,11 @@ class ProductController extends Controller
     public function guitars()
     {
         return view('guitars', [
-            "active" => "guitars"
+            "active" => "guitars",
+            "products" => Product::whereHas('category', function ($query) {
+                            $query->where('name', 'guitar'); 
+                        })->get()
+            
         ]);
     }
 
