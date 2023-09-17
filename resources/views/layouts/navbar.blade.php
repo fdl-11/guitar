@@ -18,7 +18,7 @@
             </ul>
             <ul class="navbar-nav ms-auto px-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
             </ul>
         </div>

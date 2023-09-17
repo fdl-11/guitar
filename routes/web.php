@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +26,12 @@ Route::get('/', function () {
 Route::get('/products', [ProductController::class, 'show']);
 Route::get('/products/guitars', [ProductController::class, 'guitars']);     // gak dipake
 Route::get('/products/accessories', [ProductController::class, 'accessories']);     // gak dipake
+
+// Login Route
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
+// Register Route
+Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
+Route::post('/register', [RegisterController::class, 'store']);
